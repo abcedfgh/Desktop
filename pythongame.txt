@@ -1,0 +1,33 @@
+import time
+
+num = range(0, 101)
+
+b = num[0]
+l = num[100]
+mid = (b + l) / 2
+
+print "Think of a number between 1 and 100"
+time.sleep(2)
+print "Soch liya na"
+time.sleep(1)
+while b <= l:
+    mid = (b + l) / 2
+    a = "Is your number greater than %d (Press y) or  Is your number less than %d (Press n)  or Is your number equal to %d (Press r)" % (
+    mid, mid, mid)
+    print (a)
+    c = raw_input()
+    if c == 'y':
+        b = mid
+
+    elif c == 'n':
+        l = mid
+    elif c == 'r':
+        print "KHOJ DIYA NA"
+        break
+
+
+
+
+
+
+
